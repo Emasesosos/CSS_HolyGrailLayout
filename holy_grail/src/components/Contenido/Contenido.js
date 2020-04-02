@@ -1,5 +1,5 @@
-import React from 'react';
-import imagen from './../../img/imagen.jpg';
+import React from 'react'; 
+import imagen from './../../img/imagen.jpg'; 
 
 const Contenido = () => {
     return (
@@ -24,6 +24,15 @@ const Contenido = () => {
                 Consequuntur sapiente, illum sit ratione corrupti quam cupiditate similique nemo ex perspiciatis fuga? Distinctio odio, molestias nostrum, harum minus nulla modi ipsa debitis delectus ullam explicabo omnis, ea sapiente tempora.</p>
             </main>
             <aside className="sidebar">
+                <h2>Últimas Entradas</h2> 
+                <ul>
+                    <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, provident!</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, consectetur.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, deserunt.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, ad?</li>
+                </ul>
+            </aside>
+            <aside className="sidebar derecha">
                 <h2>Últimas Entradas</h2>
                 <ul>
                     <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, provident!</li>

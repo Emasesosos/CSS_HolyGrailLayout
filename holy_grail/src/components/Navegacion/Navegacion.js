@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Navegacion = () => {
+const Navegacion = () => { 
     return (
         <nav className="navegacion">
             <ul>
@@ -13,4 +13,4 @@ const Navegacion = () => {
     );
 }
  
-export default Navegacion;
+export default Navegacion; 
