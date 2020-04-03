@@ -1,0 +1,148 @@
+html {
+    @include box-sizing(border-box);
+    // min-height: 100%;
+}
+
+*,
+*:after,
+*:before {
+    @include box-sizing(inherit); 
+}
+
+body {
+    // min-height: 100%; // Comentarios, Footer Fijo
+    // font-family: 'Montserrat', sans-serif; // Centrado
+    // background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);  // Comentarios, Footer Fijo
+    // background-image: url('./../img/hamburguesa.jpg'); // Centrado
+    // background-position: center center; // Centrado
+    // background-repeat: no-repeat; // Centrado
+    // background-size: cover; // Centrado
+    
+    font-family: 'Roboto', sans-serif;
+}  
+
+h2 {
+    text-align: center;
+}
+
+.contenedor {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 2rem;
+}
+  
+
+/* Footer */
+.body-pagina {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    > * {
+        padding: 1rem;
+    }
+    h1,h2 {
+        margin: 0;
+    }
+    .encabezado {
+        background-color: #CDDC39; 
+    }
+    .contenido-principal {
+        background-color: #B2DFDB;
+        max-width: 800px;
+        margin: 0 auto;
+        flex: 1;
+    }
+    .footer {
+        background-color: #212121;
+        color: $blanco;
+    }
+}
+
+/* Centrado */
+.body-centrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    > div {
+        flex: 0 0 calc(33.3% - 3rem);
+    }
+}
+
+.contenido-centrado {
+    color: $blanco;
+    text-align: center;
+    h1 {
+        color: #e0ab10;
+        text-transform: uppercase;
+        margin: 0;
+    }
+    p {
+        margin: 0;
+    } 
+    .ubicacion {
+        font-weight: 900;
+        font-size: 1.4rem;
+    }
+}
+
+.aviso {
+    background-color: #e0ab10;
+    padding: 1rem;
+    font-size: 1.4rem;
+    text-align: center;
+    span {
+        font-size: 3rem;
+        display: block;
+    }
+}
+
+.arriba {
+    align-self: flex-start;
+    margin-top: 3rem;
+}
+
+.abajo {
+    align-self: flex-end;
+    margin-bottom: 3rem;
+}
+
+/* Masonry */
+img {
+    max-width: 100%; 
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 300;
+}
+
+.contenedor-masonry {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.blog {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 4500px;
+    @include tablet {
+        max-height: 3000px;
+    }
+    .entrada {
+        width: calc(50% - 1rem);
+        -webkit-box-shadow: 0px 0px 44px -4px rgba(0,0,0,0.57);
+        -moz-box-shadow: 0px 0px 44px -4px rgba(0,0,0,0.57);
+        box-shadow: 0px 0px 44px -4px rgba(0,0,0,0.57);
+        margin-bottom: 1rem;
+        @include tablet {
+            width: calc(33.3% - 1rem);
+        }
+        .contenido {
+            padding: 1rem;
+        }
+    }
+}
